@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./rps.css">
+    <script src="./rps.js"></script>
+    <title>Rock Paper Scissors</title>
+</head>
+<body>
+    <!-- <div class="container"></div> -->
+  <div class="container">
+    <h1>Rock Paper Scissors</h1>
+    <div id="game-mode">
+      <h2>Choose Game Mode</h2>
+      <button id="three-rounds">3 Rounds</button>
+      <button id="five-rounds">5 Rounds</button>
+    </div>
+    <div id="game" class="hidden">
+      <h2>Make Your Choice</h2>
+      <div class="choices">
+        <button class="choice" data-choice="rock">Rock</button>
+        <button class="choice" data-choice="paper">Paper</button>
+        <button class="choice" data-choice="scissors">Scissors</button>
+      </div>
+      <div class="results">
+        <p><strong>User's Choice:</strong> <span id="user-choice">-</span></p>
+        <p><strong>Computer's Choice:</strong> <span id="computer-choice">-</span></p>
+        <p id="round-result">Start Playing!</p>
+      </div>
+      <div class="scoreboard">
+        <h3>Scoreboard</h3>
+        <p>User: <span id="user-score">0</span></p>
+        <p>Computer: <span id="computer-score">0</span></p>
+      </div>
+    </div>
+    <div id="winner" class="hidden">
+      <h2 id="final-result"></h2>
+      <button id="play-again">Play Again</button>
+    </div>
+  </div>
+</body>
+</html>
